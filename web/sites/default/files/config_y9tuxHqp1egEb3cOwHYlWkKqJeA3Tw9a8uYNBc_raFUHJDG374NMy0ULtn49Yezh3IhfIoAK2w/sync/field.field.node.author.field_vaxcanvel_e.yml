@@ -1,0 +1,19 @@
+uuid: a3b47033-dfc5-4e33-8304-4a9fdd8ce7fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vaxcanvel_e
+    - node.type.author
+id: node.author.field_vaxcanvel_e
+field_name: field_vaxcanvel_e
+entity_type: node
+bundle: author
+label: 'Վախճանվել է'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,32 @@
+uuid: 09c04e4b-9ce1-4e42-b9b1-144aa7258f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bolor_grkere
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__bolor_grkere_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:bolor_grkere-block_1'
+settings:
+  id: 'views_block:bolor_grkere-block_1'
+  label: 'Նպանատիպ գրքեր'
+  label_display: visible
+  provider: views
+  views_label: 'Նպանատիպ գրքեր'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      books: books

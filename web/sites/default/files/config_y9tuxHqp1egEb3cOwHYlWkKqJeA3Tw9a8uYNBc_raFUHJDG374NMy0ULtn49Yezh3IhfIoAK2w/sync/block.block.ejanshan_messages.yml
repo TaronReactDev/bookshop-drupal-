@@ -1,0 +1,22 @@
+uuid: 7a7b25db-a6dd-4082-ae59-a84b6d1392de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ejanshan
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: ejanshan_messages
+theme: ejanshan
+region: header
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

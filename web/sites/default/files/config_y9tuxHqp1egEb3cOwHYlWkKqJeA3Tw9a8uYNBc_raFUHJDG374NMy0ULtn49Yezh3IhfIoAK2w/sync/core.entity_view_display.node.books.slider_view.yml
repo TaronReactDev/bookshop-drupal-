@@ -1,0 +1,74 @@
+uuid: 6863fc18-a69b-4cce-a5fc-68552fbfdfae
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.slider_view
+    - field.field.node.books.body
+    - field.field.node.books.field_grki_heginake
+    - field.field.node.books.field_grki_nkaragrowtyowne
+    - field.field.node.books.field_grki_vernagire
+    - field.field.node.books.field_grqi_nkary
+    - field.field.node.books.field_kategoria
+    - image.style.large
+    - node.type.books
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0561d2db-0bb3-4e17-8975-2b13d54d322f:
+            uuid: 0561d2db-0bb3-4e17-8975-2b13d54d322f
+            region: content
+            configuration:
+              id: 'field_block:node:books:field_grqi_nkary'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.books.slider_view
+targetEntityType: node
+bundle: books
+mode: slider_view
+content:
+  field_grqi_nkary:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_grki_heginake: true
+  field_grki_nkaragrowtyowne: true
+  field_grki_vernagire: true
+  field_kategoria: true
+  langcode: true
+  links: true

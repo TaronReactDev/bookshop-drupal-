@@ -1,0 +1,174 @@
+uuid: 65694834-7198-44f9-9502-e32207a56d34
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.books.body
+    - field.field.node.books.field_grki_heginake
+    - field.field.node.books.field_grki_nkaragrowtyowne
+    - field.field.node.books.field_grki_vernagire
+    - field.field.node.books.field_grqi_nkary
+    - field.field.node.books.field_kategoria
+    - node.type.books
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          c8641165-de97-497e-a966-38f7c60f16eb:
+            uuid: c8641165-de97-497e-a966-38f7c60f16eb
+            region: first
+            configuration:
+              id: 'field_block:node:books:field_grqi_nkary'
+              label: 'Գրքի նկարը'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          438b40e0-44c1-46d5-ab0a-dd01a4053f50:
+            uuid: 438b40e0-44c1-46d5-ab0a-dd01a4053f50
+            region: second
+            configuration:
+              id: 'field_block:node:books:field_kategoria'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          c276c4f3-2994-4220-909b-401ed62bbf42:
+            uuid: c276c4f3-2994-4220-909b-401ed62bbf42
+            region: second
+            configuration:
+              id: 'field_block:node:books:field_grki_heginake'
+              label: 'Գրքի հեղինակը'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          ffabb637-7029-432d-a03f-a130d5b2f9b4:
+            uuid: ffabb637-7029-432d-a03f-a130d5b2f9b4
+            region: second
+            configuration:
+              id: 'field_block:node:books:field_grki_vernagire'
+              label: 'Գրքի վերնագիրը'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          26f735b0-44f4-47ee-8c85-fd6c85b92698:
+            uuid: 26f735b0-44f4-47ee-8c85-fd6c85b92698
+            region: content
+            configuration:
+              id: 'extra_field_block:node:books:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.books.teaser
+targetEntityType: node
+bundle: books
+mode: teaser
+content:
+  field_grki_nkaragrowtyowne:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_grqi_heginaky:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_grqi_nkary:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_kategoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_grki_heginake: true
+  field_grki_vernagire: true
+  langcode: true

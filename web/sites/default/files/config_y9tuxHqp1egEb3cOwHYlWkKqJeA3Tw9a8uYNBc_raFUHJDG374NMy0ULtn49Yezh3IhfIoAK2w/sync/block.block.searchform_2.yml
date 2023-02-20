@@ -1,0 +1,21 @@
+uuid: 4ea45afe-ae68-4766-9b04-4c66800ac057
+langcode: hy
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ejanshan
+id: searchform_2
+theme: ejanshan
+region: secondary_menu
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

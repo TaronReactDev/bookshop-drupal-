@@ -1,0 +1,25 @@
+uuid: bff77742-3550-4efd-88bc-b36d44430294
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_icons:9bb62b2b-c414-42cc-9c4b-02dd0fba61d4'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: sotsialakanejer
+theme: olivero
+region: social
+weight: 0
+provider: null
+plugin: 'block_content:9bb62b2b-c414-42cc-9c4b-02dd0fba61d4'
+settings:
+  id: 'block_content:9bb62b2b-c414-42cc-9c4b-02dd0fba61d4'
+  label: 'Սոցիալական էջեր'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

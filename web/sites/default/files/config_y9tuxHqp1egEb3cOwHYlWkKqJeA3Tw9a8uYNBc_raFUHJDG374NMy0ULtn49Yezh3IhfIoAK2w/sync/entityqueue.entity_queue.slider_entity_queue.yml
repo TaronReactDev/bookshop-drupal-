@@ -1,0 +1,26 @@
+uuid: 9f6aa961-82d4-4588-a99c-5af9b922a53e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: slider_entity_queue
+label: 'Slider entity queue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      books: books
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,19 @@
+uuid: 3caed191-5741-4834-84d6-9710ac595bf7
+langcode: hy
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grki_vernagire
+    - node.type.books
+id: node.books.field_grki_vernagire
+field_name: field_grki_vernagire
+entity_type: node
+bundle: books
+label: 'Գրքի վերնագիրը'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

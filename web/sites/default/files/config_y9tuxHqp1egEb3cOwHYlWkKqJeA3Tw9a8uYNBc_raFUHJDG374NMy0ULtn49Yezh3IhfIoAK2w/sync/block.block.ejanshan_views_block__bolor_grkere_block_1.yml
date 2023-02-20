@@ -1,0 +1,33 @@
+uuid: 8020756e-1441-47b7-8217-73ae058863eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bolor_grkere
+  module:
+    - node
+    - views
+  theme:
+    - ejanshan
+id: ejanshan_views_block__bolor_grkere_block_1
+theme: ejanshan
+region: sidebar
+weight: -8
+provider: null
+plugin: 'views_block:bolor_grkere-block_1'
+settings:
+  id: 'views_block:bolor_grkere-block_1'
+  label: 'Նպանատիպ գրքեր'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Նպանատիպ գրքեր'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      books: books

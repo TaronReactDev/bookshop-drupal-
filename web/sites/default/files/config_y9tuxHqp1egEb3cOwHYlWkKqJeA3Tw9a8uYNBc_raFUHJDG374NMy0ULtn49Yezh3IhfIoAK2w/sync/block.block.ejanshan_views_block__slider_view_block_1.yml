@@ -1,0 +1,29 @@
+uuid: f791c62e-6bd0-4476-8bda-6b30f89200c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider_view
+  module:
+    - system
+    - views
+  theme:
+    - ejanshan
+id: ejanshan_views_block__slider_view_block_1
+theme: ejanshan
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:slider_view-block_1'
+settings:
+  id: 'views_block:slider_view-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

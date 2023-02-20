@@ -1,0 +1,10 @@
+uuid: 08758540-af88-4045-9079-b77c9321698e
+langcode: en
+status: true
+dependencies: {  }
+id: social
+label: Social
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: a74b9a46-1486-4af8-a6a2-49e84ea16aa4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9f9a5dcd-3db3-4ddf-9be7-e46a83d78b74'
+  module:
+    - block_content
+  theme:
+    - ejanshan
+id: ejanshan_kapmezhet
+theme: ejanshan
+region: footer_top
+weight: -8
+provider: null
+plugin: 'block_content:9f9a5dcd-3db3-4ddf-9be7-e46a83d78b74'
+settings:
+  id: 'block_content:9f9a5dcd-3db3-4ddf-9be7-e46a83d78b74'
+  label: 'Կապ մեզ հետ'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

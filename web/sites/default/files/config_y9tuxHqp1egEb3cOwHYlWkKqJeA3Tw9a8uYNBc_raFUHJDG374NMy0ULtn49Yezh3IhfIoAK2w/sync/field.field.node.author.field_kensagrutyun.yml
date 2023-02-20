@@ -1,0 +1,21 @@
+uuid: 823e5298-8361-4b16-9657-645834cfc8dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kensagrutyun
+    - node.type.author
+  module:
+    - text
+id: node.author.field_kensagrutyun
+field_name: field_kensagrutyun
+entity_type: node
+bundle: author
+label: Կենսագրություն
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

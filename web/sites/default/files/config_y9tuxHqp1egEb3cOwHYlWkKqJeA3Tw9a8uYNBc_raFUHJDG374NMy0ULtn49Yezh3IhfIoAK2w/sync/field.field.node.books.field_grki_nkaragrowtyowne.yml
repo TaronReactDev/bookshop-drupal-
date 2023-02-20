@@ -1,0 +1,21 @@
+uuid: b7510033-f4eb-4379-833e-b002c9c0d9e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grki_nkaragrowtyowne
+    - node.type.books
+  module:
+    - text
+id: node.books.field_grki_nkaragrowtyowne
+field_name: field_grki_nkaragrowtyowne
+entity_type: node
+bundle: books
+label: 'Գրքի նկարագրությունը'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

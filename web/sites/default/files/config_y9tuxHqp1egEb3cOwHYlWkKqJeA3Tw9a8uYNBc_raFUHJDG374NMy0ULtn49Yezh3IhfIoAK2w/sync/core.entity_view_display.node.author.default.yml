@@ -1,0 +1,188 @@
+uuid: 5af27e2b-4d38-4292-a576-ac096cd2ad54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.author.body
+    - field.field.node.author.field_anown
+    - field.field.node.author.field_cnvel_e
+    - field.field.node.author.field_kensagrutyun
+    - field.field.node.author.field_nkar
+    - field.field.node.author.field_vaxcanvel_e
+    - node.type.author
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          c22f704d-29a8-43ce-a10e-9f700487cf4a:
+            uuid: c22f704d-29a8-43ce-a10e-9f700487cf4a
+            region: second
+            configuration:
+              id: 'field_block:node:author:field_cnvel_e'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          c1bb5bd8-2562-4abe-9f32-ca8cab571b85:
+            uuid: c1bb5bd8-2562-4abe-9f32-ca8cab571b85
+            region: second
+            configuration:
+              id: 'field_block:node:author:field_vaxcanvel_e'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f500949f-58c0-48b2-9724-0d8dd1e25fe7:
+            uuid: f500949f-58c0-48b2-9724-0d8dd1e25fe7
+            region: first
+            configuration:
+              id: 'field_block:node:author:field_nkar'
+              label: Նկար
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          46d41cab-53da-4e2f-a81f-8e9a637f009d:
+            uuid: 46d41cab-53da-4e2f-a81f-8e9a637f009d
+            region: second
+            configuration:
+              id: 'field_block:node:author:field_anown'
+              label: Անուն
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ae9eee12-fc11-4ecd-afdf-0eea4f8df3fd:
+            uuid: ae9eee12-fc11-4ecd-afdf-0eea4f8df3fd
+            region: content
+            configuration:
+              id: 'field_block:node:author:field_kensagrutyun'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          cf188d76-87e0-4a10-ae44-f1302cc8f6ff:
+            uuid: cf188d76-87e0-4a10-ae44-f1302cc8f6ff
+            region: content
+            configuration:
+              id: 'extra_field_block:node:author:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.author.default
+targetEntityType: node
+bundle: author
+mode: default
+content:
+  field_anown:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_cnvel_e:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_kensagrutyun:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_nkar:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_vaxcanvel_e:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  langcode: true

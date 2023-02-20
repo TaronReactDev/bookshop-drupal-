@@ -1,0 +1,19 @@
+uuid: 7a59c808-9e7b-4760-a2c0-68538eea3c2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_grki_nkaragrowtyowne
+field_name: field_grki_nkaragrowtyowne
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

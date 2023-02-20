@@ -1,0 +1,25 @@
+uuid: f6aa0156-eca2-4a64-8f53-4e236ac4a283
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ejanshan
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: ejanshan_site_branding
+theme: ejanshan
+region: header
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

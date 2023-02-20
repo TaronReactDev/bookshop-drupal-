@@ -1,0 +1,12 @@
+uuid: d8639503-cb84-4886-ba71-ef7bc2bda565
+langcode: en
+status: true
+dependencies: {  }
+id: hetadarj_kap
+label: 'Հետադարձ կապ'
+recipients:
+  - ejanshanbookshop@gmail.com
+reply: ''
+weight: 8
+message: ''
+redirect: /

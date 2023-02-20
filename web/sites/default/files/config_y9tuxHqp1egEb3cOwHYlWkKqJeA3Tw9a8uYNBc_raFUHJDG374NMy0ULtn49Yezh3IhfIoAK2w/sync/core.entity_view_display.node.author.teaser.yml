@@ -1,0 +1,42 @@
+uuid: aabb0062-7d7f-4639-9535-09fdc5c894e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.author.body
+    - field.field.node.author.field_anown
+    - field.field.node.author.field_cnvel_e
+    - field.field.node.author.field_kensagrutyun
+    - field.field.node.author.field_nkar
+    - field.field.node.author.field_vaxcanvel_e
+    - node.type.author
+  module:
+    - text
+    - user
+id: node.author.teaser
+targetEntityType: node
+bundle: author
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_anown: true
+  field_cnvel_e: true
+  field_kensagrutyun: true
+  field_nkar: true
+  field_vaxcanvel_e: true
+  langcode: true

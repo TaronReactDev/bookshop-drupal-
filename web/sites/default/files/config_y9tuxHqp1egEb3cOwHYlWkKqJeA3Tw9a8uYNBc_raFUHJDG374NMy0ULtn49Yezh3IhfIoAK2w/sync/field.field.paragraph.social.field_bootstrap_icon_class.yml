@@ -1,0 +1,19 @@
+uuid: 593b69aa-5a25-4bb2-ad65-115543c1cff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bootstrap_icon_class
+    - paragraphs.paragraphs_type.social
+id: paragraph.social.field_bootstrap_icon_class
+field_name: field_bootstrap_icon_class
+entity_type: paragraph
+bundle: social
+label: 'Bootstrap Icon Class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

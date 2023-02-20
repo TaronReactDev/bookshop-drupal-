@@ -1,0 +1,38 @@
+uuid: 6fc48b79-86b5-43a6-8911-e75d158b5b9f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f94f6bda-3152-46ee-97c7-673752b4b5a0'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - ejanshan
+id: ejanshan_actiontoregistr
+theme: ejanshan
+region: header
+weight: -2
+provider: null
+plugin: 'block_content:f94f6bda-3152-46ee-97c7-673752b4b5a0'
+settings:
+  id: 'block_content:f94f6bda-3152-46ee-97c7-673752b4b5a0'
+  label: 'Action to registr'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 32dd7e0b-f02c-40a5-aa9e-439366ac640f
+name: ejanshan
+mail: ejanshanbookshop@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /books
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: hy

@@ -1,0 +1,56 @@
+a {
+  color: dimgrey;
+}
+
+.view-bolor-grkere .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  position: relative;
+  font-size: 30px;
+}
+.social-icon a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.site-header__inner__container {
+  margin: 0;
+}
+
+div#views_slideshow_cycle_teaser_section_slider_view-block_1 {
+  width: 500px;
+  height: auto;
+}
+
+div#block-ejanshan-views-block-slider-view-block-1 {
+  width: 500px;
+  grid-area: book;
+}
+
+ul#widget_pager_bottom_slider_view-block_1 {
+  margin: 0;
+  padding: 0;
+}
+
+div#block-grkeripatvirowm {
+  grid-area: patver;
+}
+
+div#block-ejanshan-content {
+  grid-area: books;
+}
+
+div#content {
+  grid-template-columns: 500px auto;
+  grid-template-rows: 500px auto;
+  gap: 100px;
+  grid-template-areas: "book patver" "books books";
+}
+
+/*# sourceMappingURL=style.css.map */

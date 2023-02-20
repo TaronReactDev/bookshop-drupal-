@@ -1,0 +1,10 @@
+uuid: 3f6fa1d0-65da-46d8-bcff-4f896eaa2291
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.slider_view
+label: 'Slider view'
+targetEntityType: node
+cache: true

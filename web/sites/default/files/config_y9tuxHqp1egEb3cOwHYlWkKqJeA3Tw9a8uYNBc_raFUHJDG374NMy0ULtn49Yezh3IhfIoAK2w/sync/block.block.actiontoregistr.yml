@@ -1,0 +1,38 @@
+uuid: 910b3cb7-a397-4a40-b988-f1c7171967af
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f94f6bda-3152-46ee-97c7-673752b4b5a0'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - olivero
+id: actiontoregistr
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:f94f6bda-3152-46ee-97c7-673752b4b5a0'
+settings:
+  id: 'block_content:f94f6bda-3152-46ee-97c7-673752b4b5a0'
+  label: 'Action to registr'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

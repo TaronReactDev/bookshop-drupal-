@@ -1,0 +1,7 @@
+uuid: 0be73a57-6bdf-4fc6-b3fd-ff44b2065972
+langcode: en
+status: true
+dependencies: {  }
+name: slider_size
+label: 'Slider size'
+effects: {  }

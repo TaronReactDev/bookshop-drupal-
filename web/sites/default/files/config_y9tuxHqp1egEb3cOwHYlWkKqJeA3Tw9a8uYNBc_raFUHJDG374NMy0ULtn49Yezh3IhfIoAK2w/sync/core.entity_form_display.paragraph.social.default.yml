@@ -1,0 +1,34 @@
+uuid: fc03f92d-ce8b-49d1-8058-dc3ca9e3db65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social.field_bootstrap_icon_class
+    - field.field.paragraph.social.field_link
+    - paragraphs.paragraphs_type.social
+  module:
+    - link
+id: paragraph.social.default
+targetEntityType: paragraph
+bundle: social
+mode: default
+content:
+  field_bootstrap_icon_class:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

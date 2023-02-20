@@ -1,0 +1,183 @@
+uuid: 99eafa59-83e9-4108-92d4-82e31c535349
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.books.body
+    - field.field.node.books.field_grki_heginake
+    - field.field.node.books.field_grki_nkaragrowtyowne
+    - field.field.node.books.field_grki_vernagire
+    - field.field.node.books.field_grqi_nkary
+    - field.field.node.books.field_kategoria
+    - image.style.medium
+    - node.type.books
+  module:
+    - addtoany
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          c956b8f0-9569-4fb9-a688-8a00debfc6bb:
+            uuid: c956b8f0-9569-4fb9-a688-8a00debfc6bb
+            region: first
+            configuration:
+              id: 'field_block:node:books:field_grqi_nkary'
+              label: 'Գրքի նկարը'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e5b25d12-2c21-4562-9016-13c78d5ad3c5:
+            uuid: e5b25d12-2c21-4562-9016-13c78d5ad3c5
+            region: second
+            configuration:
+              id: 'field_block:node:books:field_grki_nkaragrowtyowne'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          58e29cac-fa49-4e94-ad72-b01d62f90649:
+            uuid: 58e29cac-fa49-4e94-ad72-b01d62f90649
+            region: second
+            configuration:
+              id: 'field_block:node:books:field_kategoria'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          5be46e68-d0bb-494d-94e6-b5c1d1c11426:
+            uuid: 5be46e68-d0bb-494d-94e6-b5c1d1c11426
+            region: first
+            configuration:
+              id: 'field_block:node:books:field_grki_heginake'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ff7b0049-5f41-467c-888d-c800590d21d8:
+            uuid: ff7b0049-5f41-467c-888d-c800590d21d8
+            region: first
+            configuration:
+              id: addtoany_block
+              label: 'AddToAny buttons'
+              label_display: '0'
+              provider: addtoany
+              context_mapping: {  }
+            weight: 3
+            additional: {  }
+          d6409113-e6ca-4eaf-be61-965de0ab0ea7:
+            uuid: d6409113-e6ca-4eaf-be61-965de0ab0ea7
+            region: first
+            configuration:
+              id: 'field_block:node:books:field_grki_vernagire'
+              label: 'Գրքի վերնագիրը'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: node.books.default
+targetEntityType: node
+bundle: books
+mode: default
+content:
+  field_grki_heginake:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: first
+  field_grki_nkaragrowtyowne:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_grqi_nkary:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_kategoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_grki_vernagire: true
+  langcode: true
+  links: true

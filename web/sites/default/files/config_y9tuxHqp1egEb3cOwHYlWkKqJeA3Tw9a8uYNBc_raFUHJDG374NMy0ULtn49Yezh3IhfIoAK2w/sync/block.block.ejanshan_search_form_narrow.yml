@@ -1,0 +1,23 @@
+uuid: 74b024bc-e3dd-429c-8a94-27612ee1df1b
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ejanshan
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: ejanshan_search_form_narrow
+theme: ejanshan
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
