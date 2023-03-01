@@ -1,0 +1,20 @@
+uuid: b7db7b9f-af4a-487a-bcdb-ef653150d295
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - geofield
+id: block_content.field_hasce
+field_name: field_hasce
+entity_type: block_content
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

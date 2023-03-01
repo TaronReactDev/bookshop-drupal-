@@ -1,0 +1,11 @@
+uuid: be437167-8e9c-43d5-a7f9-748a6a7c54fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.hetadarj_kap
+id: contact_message.hetadarj_kap
+target_entity_type_id: contact_message
+target_bundle: hetadarj_kap
+default_langcode: site_default
+language_alterable: false

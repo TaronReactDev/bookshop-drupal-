@@ -231,7 +231,6 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
           uses_fields: false
@@ -300,6 +299,9 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      defaults:
+        css_class: false
+      css_class: ''
       display_extenders: {  }
       path: node
     cache_metadata:

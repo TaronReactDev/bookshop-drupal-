@@ -1,0 +1,35 @@
+uuid: f28c3ad4-6e06-4c3f-85b0-c146e8988df1
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - taxonomy
+  enforced:
+    module:
+      - styled_google_map_demo
+_core:
+  default_config_hash: 4lf2ZPHVB1Ofkfie-leEVZ9RbrQ4M6No7W6viUYOnfE
+id: taxonomy_term.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

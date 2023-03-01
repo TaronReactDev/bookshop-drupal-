@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.slider_view
     - field.field.node.books.body
+    - field.field.node.books.field_arzek
     - field.field.node.books.field_grki_heginake
     - field.field.node.books.field_grki_nkaragrowtyowne
     - field.field.node.books.field_grki_vernagire
@@ -66,6 +67,7 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_arzek: true
   field_grki_heginake: true
   field_grki_nkaragrowtyowne: true
   field_grki_vernagire: true

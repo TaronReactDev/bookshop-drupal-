@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.books.body
+    - field.field.node.books.field_arzek
     - field.field.node.books.field_grki_heginake
     - field.field.node.books.field_grki_nkaragrowtyowne
     - field.field.node.books.field_grki_vernagire
@@ -108,7 +109,7 @@ third_party_settings:
               label_display: '0'
               provider: addtoany
               context_mapping: {  }
-            weight: 3
+            weight: 4
             additional: {  }
           d6409113-e6ca-4eaf-be61-965de0ab0ea7:
             uuid: d6409113-e6ca-4eaf-be61-965de0ab0ea7
@@ -128,6 +129,26 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+          a168bbf9-7bd7-46da-948a-ebe11ea2b6bc:
+            uuid: a168bbf9-7bd7-46da-948a-ebe11ea2b6bc
+            region: first
+            configuration:
+              id: 'field_block:node:books:field_arzek'
+              label: Արժեքը
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -
@@ -178,6 +199,7 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_arzek: true
   field_grki_vernagire: true
   langcode: true
   links: true

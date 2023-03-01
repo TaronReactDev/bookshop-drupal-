@@ -1,0 +1,11 @@
+uuid: 69e4fc72-3093-4e4b-8735-dd948053b434
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.zanrer
+id: taxonomy_term.zanrer
+target_entity_type_id: taxonomy_term
+target_bundle: zanrer
+default_langcode: site_default
+language_alterable: false

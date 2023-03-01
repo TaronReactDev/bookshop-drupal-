@@ -1,0 +1,8 @@
+uuid: 32df1e26-40ad-4b73-8e06-42df5a7fa354
+langcode: hy
+status: true
+dependencies: {  }
+id: map
+label: Map
+revision: 0
+description: ''

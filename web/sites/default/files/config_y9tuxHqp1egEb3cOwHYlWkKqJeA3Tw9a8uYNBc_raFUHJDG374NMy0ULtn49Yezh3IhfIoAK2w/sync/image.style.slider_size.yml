@@ -3,5 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: slider_size
-label: 'Slider size'
-effects: {  }
+label: 'Slider size 600*800'
+effects:
+  00036e5f-feac-4178-97ac-de67830c9daa:
+    uuid: 00036e5f-feac-4178-97ac-de67830c9daa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 800
+      anchor: center-center

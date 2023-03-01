@@ -1,0 +1,23 @@
+uuid: 4f9b6422-cb5f-4972-8d04-a39a8dd863b3
+langcode: hy
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.map.body
+field_name: body
+entity_type: block_content
+bundle: map
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

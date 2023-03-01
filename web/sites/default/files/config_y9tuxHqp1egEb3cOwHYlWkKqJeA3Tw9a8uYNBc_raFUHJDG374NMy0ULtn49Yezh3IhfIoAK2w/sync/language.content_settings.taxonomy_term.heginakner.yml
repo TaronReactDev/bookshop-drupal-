@@ -1,0 +1,11 @@
+uuid: 97537643-fc2b-48fc-ad20-3f3629f19d8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.heginakner
+id: taxonomy_term.heginakner
+target_entity_type_id: taxonomy_term
+target_bundle: heginakner
+default_langcode: site_default
+language_alterable: false

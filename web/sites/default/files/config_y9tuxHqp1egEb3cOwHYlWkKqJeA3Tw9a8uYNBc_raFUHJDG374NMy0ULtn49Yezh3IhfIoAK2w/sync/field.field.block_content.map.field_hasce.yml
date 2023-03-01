@@ -1,0 +1,21 @@
+uuid: e00fb5d2-4bc4-424c-a818-bb2358d400ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.field_hasce
+  module:
+    - geofield
+id: block_content.map.field_hasce
+field_name: field_hasce
+entity_type: block_content
+bundle: map
+label: Հասցե
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

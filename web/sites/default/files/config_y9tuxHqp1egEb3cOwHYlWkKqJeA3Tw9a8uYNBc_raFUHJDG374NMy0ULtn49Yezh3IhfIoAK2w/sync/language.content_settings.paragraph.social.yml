@@ -1,0 +1,11 @@
+uuid: 2ca0d44e-4867-4f2d-ae19-9012af71275b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.social
+id: paragraph.social
+target_entity_type_id: paragraph
+target_bundle: social
+default_langcode: site_default
+language_alterable: false

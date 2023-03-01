@@ -1,0 +1,11 @@
+uuid: b2054eaa-c51e-4075-bfc1-b0eefaec1d0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icons
+id: block_content.social_icons
+target_entity_type_id: block_content
+target_bundle: social_icons
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,67 @@
+uuid: 86e33b2b-bc64-4922-a55c-45b429f195d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.real_estate.field_icon
+    - image.style.thumbnail
+    - taxonomy.vocabulary.real_estate
+  module:
+    - image
+    - path
+    - text
+  enforced:
+    module:
+      - styled_google_map_demo
+_core:
+  default_config_hash: wHrQf0X1hmXJvAQy3HXutf9Jrk1o8y0fT8gkimXEUbA
+id: taxonomy_term.real_estate.default
+targetEntityType: taxonomy_term
+bundle: real_estate
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_icon:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

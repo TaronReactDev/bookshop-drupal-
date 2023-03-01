@@ -1,0 +1,23 @@
+uuid: e90bb2ee-e4f1-4b2f-9c91-a56699460679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arzek
+    - node.type.books
+id: node.books.field_arzek
+field_name: field_arzek
+entity_type: node
+bundle: books
+label: Արժեքը
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: դրամ
+field_type: integer

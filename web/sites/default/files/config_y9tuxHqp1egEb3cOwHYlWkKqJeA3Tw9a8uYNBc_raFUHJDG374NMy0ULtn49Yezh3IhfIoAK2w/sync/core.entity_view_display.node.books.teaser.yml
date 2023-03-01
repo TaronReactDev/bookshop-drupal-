@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.books.body
+    - field.field.node.books.field_arzek
     - field.field.node.books.field_grki_heginake
     - field.field.node.books.field_grki_nkaragrowtyowne
     - field.field.node.books.field_grki_vernagire
@@ -14,7 +15,6 @@ dependencies:
   module:
     - image
     - layout_builder
-    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -45,7 +45,7 @@ third_party_settings:
                 label: hidden
                 settings:
                   image_link: content
-                  image_style: large
+                  image_style: medium
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
@@ -65,7 +65,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 5
+            weight: 6
             additional: {  }
           c276c4f3-2994-4220-909b-401ed62bbf42:
             uuid: c276c4f3-2994-4220-909b-401ed62bbf42
@@ -105,21 +105,35 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
+          9287f1f3-8d23-4039-9b60-d7231887e4b9:
+            uuid: 9287f1f3-8d23-4039-9b60-d7231887e4b9
+            region: second
+            configuration:
+              id: 'field_block:node:books:field_arzek'
+              label: Արժեքը
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
           26f735b0-44f4-47ee-8c85-fd6c85b92698:
             uuid: 26f735b0-44f4-47ee-8c85-fd6c85b92698
-            region: content
+            region: second
             configuration:
               id: 'extra_field_block:node:books:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-            weight: 0
+            weight: 7
             additional: {  }
         third_party_settings: {  }
 id: node.books.teaser
@@ -169,6 +183,7 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_arzek: true
   field_grki_heginake: true
   field_grki_vernagire: true
   langcode: true

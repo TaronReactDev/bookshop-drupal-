@@ -1,0 +1,34 @@
+uuid: 5ecc2f97-fb21-4b2b-97d4-3df087ff6fe0
+langcode: hy
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.field.block_content.map.body
+    - field.field.block_content.map.field_hasce
+  module:
+    - geofield
+    - text
+id: block_content.map.default
+targetEntityType: block_content
+bundle: map
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hasce:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
