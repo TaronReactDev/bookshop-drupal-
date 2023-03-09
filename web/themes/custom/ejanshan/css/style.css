@@ -7,50 +7,77 @@ a {
   flex-wrap: wrap;
 }
 
-.social-icon {
-  position: relative;
-  font-size: 30px;
-}
-.social-icon a {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.node--view-mode-teaser:after {
+  content: none !important;
 }
 
+@media screen and (max-width: 900px) {
+  .w-50.views-row {
+    width: 100% !important;
+  }
+}
+.field.field--name-field-icon-link.field--type-entity-reference-revisions.field--label-above .field__label {
+  display: none;
+}
+.field.field--name-field-icon-link.field--type-entity-reference-revisions.field--label-above .field__items {
+  position: sticky;
+  top: 200px;
+}
+
+.social-icon {
+  font-size: 30px;
+}
+
+.social-bar__inner .rotate {
+  transform: rotate(360deg) translateX(-50%);
+}
+
+.social-bar__inner.fixable {
+  position: sticky;
+  top: 200px;
+}
+
+@media screen and (max-width: 1201px) {
+  .social-bar__inner .rotate {
+    transform: rotate(90deg);
+  }
+  .social-bar__inner .field__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .social-bar__inner .field__item {
+    transform: rotate(270deg);
+  }
+}
 .site-header__inner__container {
   margin: 0;
 }
 
-div#views_slideshow_cycle_teaser_section_slider_view-block_1 {
-  width: 500px;
-  height: auto;
-}
-
-div#block-ejanshan-views-block-slider-view-block-1 {
-  width: 500px;
-  grid-area: book;
-}
-
-ul#widget_pager_bottom_slider_view-block_1 {
-  margin: 0;
-  padding: 0;
+div#content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div#block-grkeripatvirowm {
-  grid-area: patver;
+  width: 40%;
 }
 
-div#block-ejanshan-content {
-  grid-area: books;
+div#block-ejanshan-views-block-slider-view-block-1 {
+  width: 40%;
 }
 
-div#content {
-  grid-template-columns: 500px auto;
-  grid-template-rows: 500px auto;
-  gap: 100px;
-  grid-template-areas: "book patver" "books books";
+.views_slideshow_cycle_teaser_section {
+  max-width: 450px !important;
+}
+.views_slideshow_cycle_teaser_section div {
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 75rem) {
+  .site-footer__inner {
+    padding-block: 72px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

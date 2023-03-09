@@ -164,7 +164,7 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_y9tuxHqp1egEb3cOwHYlWkKqJeA3Tw9a8uYNBc_raFUHJDG374NMy0ULtn49Yezh3IhfIoAK2w/sync';
+//$settings['config_sync_directory'] = 'sites/default/files/config_y9tuxHqp1egEb3cOwHYlWkKqJeA3Tw9a8uYNBc_raFUHJDG374NMy0ULtn49Yezh3IhfIoAK2w/sync';
 
 
 $settings['trusted_host_patterns'] = [

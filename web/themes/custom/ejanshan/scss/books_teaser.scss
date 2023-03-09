@@ -4,3 +4,17 @@
     flex-wrap: wrap;
   }
 }
+
+
+.node--view-mode-teaser:after{
+  content: none !important;
+
+}
+
+
+
+@media screen and (max-width: 900px ) {
+  .w-50.views-row{
+    width: 100% !important;
+  }
+}

@@ -86,6 +86,8 @@
       <path value="$PROJECT_DIR$/vendor/phootwork/collection" />
       <path value="$PROJECT_DIR$/vendor/phootwork/lang" />
       <path value="$PROJECT_DIR$/vendor/webflo/drupal-finder" />
+      <path value="$PROJECT_DIR$/vendor/commerceguys/addressing" />
+      <path value="$PROJECT_DIR$/vendor/itamair/geophp" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">

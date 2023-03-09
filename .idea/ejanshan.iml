@@ -88,6 +88,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phootwork/collection" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phootwork/lang" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webflo/drupal-finder" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/commerceguys/addressing" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/itamair/geophp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
